@@ -29,26 +29,11 @@ function fadeFromRight(elem)
 		marginRight : '+=' + offset
 	}, 500);
 	$(elem).removeClass('fade-in-right');
-	$(elem).addClass('fade-in-shown');
+	//$(elem).addClass('fade-in-shown');
 }
 
 function setupNavigation()
 {
-	/*
-	var offset = $('.first-row').offset().top - 45;
-	if ($(window).scrollTop() > offset) {
-		$('.main-menu').stop().animate({
-			backgroundColor : '#37353a',
-			boxShadow : '0 2px 6px rgba(0, 0, 0, 0.2)',
-			top : '0px'
-		}, 500);
-	}
-	if ($(window).scrollTop() < 150) {
-		$('.main-menu').stop().animate({
-			backgroundColor : 'transparent'
-		}, 500);
-	}*/
-	
 	var offset = $('.first-row').offset().top - 45;
 	if ($(window).scrollTop() > offset) {
 		$('.main-menu').addClass('main-menu-dark');
@@ -101,14 +86,16 @@ $(document).ready(function() {
 			});
 			chartHidden = false;
 		}
-		if (isScrolledIntoView('.fade-in-left'))
-		{
-			$('.fade-in-left').addClass('slideRightCalm');
-		}
-		if (isScrolledIntoView('.fade-in-right'))
-		{
-			$('.fade-in-right').addClass('slideLeftCalm');
-		}
+		$('.fade-in-right').each(function() {
+			if (isScrolledIntoView(this)) {
+				$(this).addClass('slideLeftCalm');
+			}
+		});
+		$('.fade-in-left').each(function() {
+			if (isScrolledIntoView(this)) {
+				$(this).addClass('slideRightCalm');
+			}
+		});
 	});
 });
 
