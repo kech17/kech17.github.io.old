@@ -135,7 +135,7 @@ $(document).ready(function() {
 		autoScroll(this,'.fourth-row');
 	});
 
-	$('#contactForm').bind('ajax:complete', function() {
+	$("[name='contactForm']").bind('ajax:complete', function() {
 		formSubmitSuccess();
 	})
 
