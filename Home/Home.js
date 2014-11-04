@@ -134,11 +134,25 @@ $(document).ready(function() {
 	$('#contact-button').click(function() {
 		autoScroll(this,'.fourth-row');
 	});
+	$('#contactForm').submit(function() {
 
-	$("[name='contactForm']").bind('ajax:complete', function() {
-		formSubmitSuccess();
+		var dataObj = {};
+		dataObj.firstName = $('#firstName').val();
+		dataObj.lastName = $('#lastName').val();
+		dataObj.email = $('#email').val();
+		dataObj.message = $('#message').val();
+
+		$.ajax({
+		    url: "http://forms.brace.io/kevinchang@live.ca", 
+		    method: "POST",
+		    data: JSON.stringify(dataObj),
+		    dataType: "json",
+		    success: function(data)
+		    {
+		    	formSubmitSuccess();
+		    }
+		});
 	})
-
 	
 	$(window).scroll(function() {
 		setupNavigation();
