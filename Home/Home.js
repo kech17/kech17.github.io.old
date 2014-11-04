@@ -1,3 +1,28 @@
+function validateForm()
+{
+	var firstNameField = document.forms["contactForm"]["firstName"].value;
+	var lastNameField = document.forms["contactForm"]["lastName"].value;
+	var messageField = document.forms["contactForm"]["message"].value;
+	var emailField = document.forms["contactForm"]["_replyto"].value;
+
+	var arrayField = [firstNameField, lastNameField, messageField];
+	for (var i = 0; i < arrayField.length; i++)
+	{
+		if (arrayField[i] == null || arrayField[i] == "")
+		{
+			missingFieldAlert();
+			return false;
+		}
+	}
+
+    var atpos = emailField.indexOf("@");
+    var dotpos = emailField.lastIndexOf(".");
+    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=emailField.length) {
+        badEmailAlert();
+        return false;
+    }
+}
+
 function isScrolledIntoView(elem)
 {
     var docViewTop = $(window).scrollTop();
@@ -29,7 +54,6 @@ function fadeFromRight(elem)
 		marginRight : '+=' + offset
 	}, 500);
 	$(elem).removeClass('fade-in-right');
-	//$(elem).addClass('fade-in-shown');
 }
 
 function setupNavigation()
@@ -50,27 +74,71 @@ function autoScroll(fromElem, toElem)
 		}, 2500);
 }
 
-function comingSoon()
+/*******************************/
+/******  SWEET ALERTS  *********/
+/*******************************/
+
+function comingSoonAlert()
 {
 	swal({
-			title: 'Coming Soon',
+			title: 'Coming Soon!',
 			text: 'I am still creating this page!',
 			type: 'info',
 			confirm: 'OK'
 		});
 }
 
+function missingFieldAlert()
+{
+	swal({
+		title: 'Missing Contact Fields!',
+		text: 'You need to fill in all fields before submission',
+		type: 'error',
+		Confirm: 'OK'
+	})
+}
+
+function badEmailAlert()
+{
+	swal({
+		title: 'Bad Email Format!',
+		text: 'You must submit a valid email',
+		type: 'error',
+		Confirm: 'OK'
+	})
+}
+
+function formSubmitSuccess()
+{
+	swal({
+		title: 'Submission Success!',
+		text: 'I will respond to your email as soon as possible!',
+		type: 'success',
+		Confirm: 'Done'
+	})
+}
+
+/*******************************/
+/******  MAIN PROGRAM  *********/
+/*******************************/
+
+
 $(document).ready(function() {
 	var chartHidden = true;
 	$('.project-nav').click(function() {
-		comingSoon();
+		comingSoonAlert();
 	});
 	$('.cv-nav').click(function() {
-		comingSoon();
+		comingSoonAlert();
 	});
 	$('#contact-button').click(function() {
 		autoScroll(this,'.fourth-row');
 	});
+
+	$('#contactForm').bind('ajax:complete', function() {
+		formSubmitSuccess();
+	})
+
 	
 	$(window).scroll(function() {
 		setupNavigation();
