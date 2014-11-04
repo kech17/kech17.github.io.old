@@ -1,3 +1,15 @@
+<!--		KEVIN JUNG CHANG
+**
+**		I see you've stumbled on my code. I'm a strong believer in learning through example!
+**		If you have any questions about this code, feel free to ask!
+**
+**		Projects Used:
+**			1. Chart.js
+**			2. Foundation
+**			3. Brace Forms
+**
+-->
+
 <!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" >
@@ -157,7 +169,7 @@
 						<br>
 						Developed both iOS and Android mobile applications
 						<br>
-						Prototyping with Arduino and communcation modules
+						Prototyping with Arduino and communication modules
 						<br>
 						Object oriented programming using Java, C#, and Python
 						<br>
@@ -179,27 +191,29 @@
 				</p>
 				<form>
 					<div class='row'>
-						<div class='large-4 columns fade-in-left'>
-							<label>First Name
-								<input type='text' id='firstName'>
-							</label>
-							<label>Last Name
-								<input type='text' id='lastName'>
-							</label>
-							<label>Email Address
-								<input type='text' id='email'>
-							</label>
-						</div>
-						<div class='large-4 columns fade-in-right'>
-							<label>Your Message 								
-								<textarea id='message'></textarea> 
-							</label>
-						</div>
+						<form action='http://forms.brace.io/kevinchang@live.ca'>
+							<div class='large-4 columns fade-in-left'>
+								<label>First Name
+									<input type='text' id='firstName' name='firstName'>
+								</label>
+								<label>Last Name
+									<input type='text' id='lastName' name='lastName'>
+								</label>
+								<label>Email Address
+									<input type='text' id='_replyto' name='email'>
+								</label>
+							</div>
+							<div class='large-4 columns fade-in-right'>
+								<label>Your Message 								
+									<textarea id='message' name='message'></textarea> 
+								</label>
+							</div>
+						</form>
 					</div>
 				</form>
 
 				<div class='button-wrapper'>
-					<button id='send-button' class='main-button'>
+					<button type='submit' value='Send' id='send-button' class='main-button'>
 						<span>SEND MESSAGE</span>
 					</button>
 				</div>
