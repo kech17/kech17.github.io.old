@@ -15,23 +15,26 @@ function validateForm()
 		}
 	}
 
-    var atpos = emailField.indexOf("@");
-    var dotpos = emailField.lastIndexOf(".");
-    if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=emailField.length) {
-        badEmailAlert();
-        return false;
-    }
+	var atpos = emailField.indexOf("@");
+	var dotpos = emailField.lastIndexOf(".");
+	if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=emailField.length) {
+		badEmailAlert();
+		return false;
+	}
+
+	$('#contactForm').trigger('submit');
+	return true;
 }
 
 function isScrolledIntoView(elem)
 {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
 
-    var elemTop = $(elem).offset().top;
-    var elemHeight = $(elem).height();
-    var elemBottom = elemTop + elemHeight;
-  
+	var elemTop = $(elem).offset().top;
+	var elemHeight = $(elem).height();
+	var elemBottom = elemTop + elemHeight;
+
     //return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
     return (docViewBottom >= (elemTop+elemHeight/2));
 }
@@ -69,53 +72,9 @@ function setupNavigation()
 
 function autoScroll(fromElem, toElem)
 {
-		$('html, body').animate({
-			scrollTop : $(toElem).offset().top 
-		}, 2500);
-}
-
-/*******************************/
-/******  SWEET ALERTS  *********/
-/*******************************/
-
-function comingSoonAlert()
-{
-	swal({
-			title: 'Coming Soon!',
-			text: 'I am still creating this page!',
-			type: 'info',
-			confirm: 'OK'
-		});
-}
-
-function missingFieldAlert()
-{
-	swal({
-		title: 'Missing Contact Fields!',
-		text: 'You need to fill in all fields before submission',
-		type: 'error',
-		Confirm: 'OK'
-	})
-}
-
-function badEmailAlert()
-{
-	swal({
-		title: 'Bad Email Format!',
-		text: 'You must submit a valid email',
-		type: 'error',
-		Confirm: 'OK'
-	})
-}
-
-function formSubmitSuccess()
-{
-	swal({
-		title: 'Submission Success!',
-		text: 'I will respond to your email as soon as possible!',
-		type: 'success',
-		Confirm: 'Done'
-	})
+	$('html, body').animate({
+		scrollTop : $(toElem).offset().top 
+	}, 2500);
 }
 
 /*******************************/
@@ -134,26 +93,21 @@ $(document).ready(function() {
 	$('#contact-button').click(function() {
 		autoScroll(this,'.fourth-row');
 	});
-	$('#contactForm').submit(function() {
-
-		var dataObj = {};
-		dataObj.firstName = $('#firstName').val();
-		dataObj.lastName = $('#lastName').val();
-		dataObj.email = $('#email').val();
-		dataObj.message = $('#message').val();
-
+	$('#contactForm').submit(function(event) {
+		event.preventDefault();
+		var formData = $(this).serialize();
+		console.log(formData);
 		$.ajax({
-		    url: "http://forms.brace.io/kevinchang@live.ca", 
-		    method: "POST",
-		    data: JSON.stringify(dataObj),
-		    dataType: "json",
-		    success: function(data)
-		    {
-		    	formSubmitSuccess();
-		    }
+			url: "http://forms.brace.io/kevinchang@live.ca", 
+			method: "POST",
+			data: formData,
+			dataType: "json"
+		}).done(function() {
+			formSubmitSuccess();
+		}).fail(function() {
+			formSubmitFail();
 		});
-	})
-	
+	});
 	$(window).scroll(function() {
 		setupNavigation();
 		if (chartHidden && isScrolledIntoView('#hardwareChart'))
@@ -180,6 +134,60 @@ $(document).ready(function() {
 		});
 	});
 });
+
+/*******************************/
+/******  SWEET ALERTS  *********/
+/*******************************/
+
+function comingSoonAlert()
+{
+	swal({
+		title: 'Coming Soon!',
+		text: 'I am still creating this page!',
+		type: 'info',
+		confirm: 'OK'
+	});
+}
+
+function missingFieldAlert()
+{
+	swal({
+		title: 'Missing Contact Fields!',
+		text: 'You need to fill in all fields before submission',
+		type: 'error',
+		Confirm: 'OK'
+	});
+}
+
+function badEmailAlert()
+{
+	swal({
+		title: 'Bad Email Format!',
+		text: 'You must submit a valid email',
+		type: 'error',
+		Confirm: 'OK'
+	});
+}
+
+function formSubmitSuccess()
+{
+	swal({
+		title: 'Submission Success!',
+		text: 'I will respond to your email as soon as possible!',
+		type: 'success',
+		Confirm: 'Done'
+	});
+}
+
+function formSubmitFail()
+{
+	swal({
+		title: 'Submission Failed!',
+		text: 'There was a problem in submitting your message. Please try again later.',
+		type: 'error',
+		Confirm: 'Done'
+	});
+}
 
 
 
