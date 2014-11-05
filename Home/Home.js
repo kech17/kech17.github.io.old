@@ -74,7 +74,7 @@ function autoScroll(fromElem, toElem)
 {
 	$('html, body').animate({
 		scrollTop : $(toElem).offset().top 
-	}, 2500);
+	}, 1500);
 }
 
 /*******************************/
