@@ -51,8 +51,176 @@
 <body>
 
 	<div class='fixed-row main-row'>
-		<div class='overlay'>
-			<nav class='main-menu'>
+		<nav class='main-menu'>
+			<ul>
+				<li class='current'>
+					<a href='index.html'>Home</a>
+				</li>
+
+				<li>
+					<a class='project-nav'>Projects</a>
+				</li>
+
+				<li >
+					<a class='cv-nav'>C.V.</a>
+				</li>
+			</ul>
+		</nav>
+		<div class='title-wrapper'>
+			<h1 class='normal'>Hi, my name is Jung</h1>
+			<h1 class='bold'>I AM A DEVELOPER</h1>
+			<div class='button-wrapper'>
+				<button id='contact-button' class='main-button'>
+					<span>CONTACT ME</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class='first-row'>
+		<div class='padding-bot-top row'>
+			<header>
+				<h2>about <span class='green-text'>me</span>.</h2>
+			</header>
+			<p class='title-caption'>
+				I am a 20 year old engineering student in Canada. I love to
+				work on projects involving everything tech related!
+			</p>
+			<div class='row'>
+				<div class='small-4 large-4 columns'><img src='Resource/rocket.png' class='main-icons'/>
+				</div>
+				<div class='small-4 large-4 columns'><img src='Resource/book.png'class='main-icons'/>
+				</div>
+				<div class='small-4 large-4 columns'><img src='Resource/keyboard.png'class='main-icons'/>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='small-4 large-4 columns'>
+					<p class='title'>
+						ENGINEERING
+					</p>
+				</div>
+				<div class='small-4 large-4 columns'>
+					<p class='title'>
+						STUDENT
+					</p>
+				</div>
+				<div class='small-4 large-4 columns'>
+					<p class='title'>
+						TECHNICAL SKILLS
+					</p>
+				</div>
+			</div>
+			<div class='row description'>
+				<div class='small-4 large-4 columns'>
+					<p>
+						I am studying Honours Electrical Engineering and will graduate in 2017 with a Bachelors of Applied Science.
+					</p>
+				</div>
+				<div class='small-4 large-4 columns'>
+					<p>
+						I am currently a third year student enrolled at the University of Waterloo in Waterloo, Canada.
+					</p>
+				</div>
+				<div class='small-4 large-4 columns'>
+					<p>
+						My technical skills range from object oriented programming to low-level debugging and hardware prototyping.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class='second-row'>
+		<div class='padding-bot-top row'>
+			<header>
+				<h2>who I <span class='green-text'>am</span>.</h2>
+			</header>
+			<p class='title-caption'>
+				My name is Jung Chang but you can call me Kevin!
+			</p>
+			<div class='small-12 large-7 columns'>
+				<p class='whoiam-body'>
+					I am a student at the University of Waterloo studying Electrical Engineering. My academic and internship experiences have provided me with a comprehensive understanding of software and hardware systems such as object oriented programming and circuit analysis. This has given me the strong foundation needed to work for leading technology companies.  
+					<br><br>
+					I see myself as a developer because I like to create things. Whether it is a business project or a simple portfolio website, I enjoy seeing a finished product that I can be proud of and call my own.
+
+				</p>
+			</div>
+			<div class='small-12 large-5 columns'>
+				<img src='Resource/self.png' class='self-img fade-in-right'/>
+			</div>
+		</div>
+	</div>
+	<div class='third-row'>
+		<div class='padding-bot-top row'>
+			<header>
+				<h2><span class='green-text'>my</span> skills.</h2>
+			</header>
+			<p class='title-caption'>
+				I love exploring new concepts and perfecting my skills. I strive
+				to learn more about the technical world.
+			</p>
+			<div class='large-7 columns'>
+				<canvas id="hardwareChart" width="650" height="397"></canvas>
+			</div>
+			<div class='large-5 columns'>
+				<p>
+					Front and back end web development experience
+					<br>
+					Developed both iOS and Android mobile applications
+					<br>
+					Prototyping with Arduino and communication modules
+					<br>
+					Object oriented programming using Java, C#, and Python
+					<br>
+					Integrated circuits analysis and RTL design
+					<br>
+					Experience with automation and robotics
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class='fourth-row'>
+		<div class='padding-bot-top row'>
+			<header>
+				<h2>contact <span class='green-text'>me</span>.</h2>
+			</header>
+			<p class='title-caption'>
+				Want to just say hi? Send me an email about anything you like!
+				I will get back to you as soon as possible!
+			</p>
+			<form id='contactForm' name='contactForm'>
+				<div class='row'>
+					<div class='large-4 columns fade-in-left'>
+						<label>First Name
+							<input type='text' id='firstName' name='firstName' maxlength='20'>
+						</label>
+						<label>Last Name
+							<input type='text' id='lastName' name='lastName' maxlength='20'>
+						</label>
+						<label>Email Address
+							<input type='text' id='email' name='_replyto' maxlength='40'>
+						</label>
+					</div>
+					<div class='large-4 columns fade-in-right'>
+						<label>Your Message 								
+							<textarea id='message' name='message' maxlength='500'></textarea> 
+						</label>
+					</div>
+				</div>
+				<div class='button-wrapper'>
+					<button type='button' onclick='validateForm()' id='send-button' class='main-button'>
+						<span>SEND MESSAGE</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<div class='row'>
+			<div class='large-6 columns'>
+				© 2014 Kevin Chang
+			</div>
+			<div class='large-6 columns'>
 				<ul>
 					<li class='current'>
 						<a href='index.html'>Home</a>
@@ -65,191 +233,22 @@
 					<li >
 						<a class='cv-nav'>C.V.</a>
 					</ul>
-				</nav>
-				<div class='title-wrapper'>
-					<h1 class='normal'>Hi, my name is Jung</h1>
-					<h1 class='bold'>I AM A DEVELOPER</h1>
-					<div class='button-wrapper'>
-						<button id='contact-button' class='main-button'>
-							<span>CONTACT ME</span>
-						</button>
-					</div>
 				</div>
 			</div>
-		</div>
-		<div class='first-row'>
-			<div class='padding-bot-top row'>
-				<header>
-					<h2>about <span class='green-text'>me</span>.</h2>
-				</header>
-				<p class='title-caption'>
-					I am a 20 year old engineering student in Canada. I love to
-					work on projects involving everything tech related!
-				</p>
-				<div class='row'>
-					<div class='small-4 large-4 columns'><img src='Resource/rocket.png' class='main-icons'/>
-					</div>
-					<div class='small-4 large-4 columns'><img src='Resource/book.png'class='main-icons'/>
-					</div>
-					<div class='small-4 large-4 columns'><img src='Resource/keyboard.png'class='main-icons'/>
-					</div>
-				</div>
-				<div class='row'>
-					<div class='small-4 large-4 columns'>
-						<p class='title'>
-							ENGINEERING
-						</p>
-					</div>
-					<div class='small-4 large-4 columns'>
-						<p class='title'>
-							STUDENT
-						</p>
-					</div>
-					<div class='small-4 large-4 columns'>
-						<p class='title'>
-							TECHNICAL SKILLS
-						</p>
-					</div>
-				</div>
-				<div class='row description'>
-					<div class='small-4 large-4 columns'>
-						<p>
-							I am studying Honours Electrical Engineering and will graduate in 2017 with a Bachelors of Applied Science.
-						</p>
-					</div>
-					<div class='small-4 large-4 columns'>
-						<p>
-							I am currently a third year student enrolled at the University of Waterloo in Waterloo, Canada.
-						</p>
-					</div>
-					<div class='small-4 large-4 columns'>
-						<p>
-							My technical skills range from object oriented programming to low-level debugging and hardware prototyping.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class='second-row'>
-			<div class='padding-bot-top row'>
-				<header>
-					<h2>who I <span class='green-text'>am</span>.</h2>
-				</header>
-				<p class='title-caption'>
-					My name is Jung Chang but you can call me Kevin!
-				</p>
-				<div class='small-12 large-7 columns'>
-					<p class='whoiam-body'>
-						I am a student at the University of Waterloo studying Electrical Engineering. My academic and internship experiences have provided me with a comprehensive understanding of software and hardware systems such as object oriented programming and circuit analysis. This has given me the strong foundation needed to work for leading technology companies.  
-						<br><br>
-						I see myself as a developer because I like to create things. Whether it is a business project or a simple portfolio website, I enjoy seeing a finished product that I can be proud of and call my own.
+		</footer>
+	</body>
+	<script src='Home/customChart.js'></script>
+	<script>
+	$(document).foundation();
+	</script>
+	<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-					</p>
-				</div>
-				<div class='small-12 large-5 columns'>
-					<img src='Resource/self.png' class='self-img fade-in-right'/>
-				</div>
-			</div>
-		</div>
-		<div class='third-row'>
-			<div class='padding-bot-top row'>
-				<header>
-					<h2><span class='green-text'>my</span> skills.</h2>
-				</header>
-				<p class='title-caption'>
-					I love exploring new concepts and perfecting my skills. I strive
-					to learn more about the technical world.
-				</p>
-				<div class='large-7 columns'>
-					<canvas id="hardwareChart" width="650" height="397"></canvas>
-				</div>
-				<div class='large-5 columns'>
-					<p>
-						Front and back end web development experience
-						<br>
-						Developed both iOS and Android mobile applications
-						<br>
-						Prototyping with Arduino and communication modules
-						<br>
-						Object oriented programming using Java, C#, and Python
-						<br>
-						Integrated circuits analysis and RTL design
-						<br>
-						Experience with automation and robotics
-					</p>
-				</div>
-			</div>
-		</div>
-		<div class='fourth-row'>
-			<div class='padding-bot-top row'>
-				<header>
-					<h2>contact <span class='green-text'>me</span>.</h2>
-				</header>
-				<p class='title-caption'>
-					Want to just say hi? Send me an email about anything you like!
-					I will get back to you as soon as possible!
-				</p>
-				<form id='contactForm' name='contactForm'>
-					<div class='row'>
-						<div class='large-4 columns fade-in-left'>
-							<label>First Name
-								<input type='text' id='firstName' name='firstName' maxlength='20'>
-							</label>
-							<label>Last Name
-								<input type='text' id='lastName' name='lastName' maxlength='20'>
-							</label>
-							<label>Email Address
-								<input type='text' id='email' name='_replyto' maxlength='40'>
-							</label>
-						</div>
-						<div class='large-4 columns fade-in-right'>
-							<label>Your Message 								
-								<textarea id='message' name='message' maxlength='500'></textarea> 
-							</label>
-						</div>
-					</div>
-					<div class='button-wrapper'>
-						<button type='button' onclick='validateForm()' id='send-button' class='main-button'>
-							<span>SEND MESSAGE</span>
-						</button>
-					</div>
-				</form>
-			</div>
-		</div>
-		<footer>
-			<div class='row'>
-				<div class='large-6 columns'>
-					© 2014 Kevin Chang
-				</div>
-				<div class='large-6 columns'>
-					<ul>
-						<li class='current'>
-							<a href='index.html'>Home</a>
-						</li>
+	ga('create', 'UA-56299724-1', 'auto');
+	ga('send', 'pageview');
 
-						<li>
-							<a class='project-nav'>Projects</a>
-						</li>
-
-						<li >
-							<a class='cv-nav'>C.V.</a>
-						</ul>
-					</div>
-				</div>
-			</footer>
-		</body>
-		<script src='Home/customChart.js'></script>
-		<script>
-		$(document).foundation();
-		</script>
-		<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-		ga('create', 'UA-56299724-1', 'auto');
-		ga('send', 'pageview');
-
-		</script>
-		</html>
+	</script>
+	</html>
