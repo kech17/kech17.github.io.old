@@ -116,9 +116,9 @@ $(document).ready(function() {
 				responsive:true,
 				scaleOverride:true,
 				scaleSteps: 10,
-				scaleStepWidth: 10,
+				scaleStepWidth: 1,
 				scaleStartValue: 0,
-				scaleLabel: "<%=value%>"+"%"
+				scaleLabel: "<%=value%>"
 			});
 			chartHidden = false;
 		}

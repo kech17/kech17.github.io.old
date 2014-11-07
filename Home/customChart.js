@@ -8,7 +8,7 @@ var hardwareData = {
             strokeColor: "rgba(119,221,119,0.8)",
             highlightFill: "rgba(119,221,119,0.75)",
             highlightStroke: "rgba(119,221,119,1)",
-            data: [70, 50, 80, 60, 90, 70, 40]
+            data: [7, 5, 8, 6, 9, 7, 4]
         }
     ]
 };
