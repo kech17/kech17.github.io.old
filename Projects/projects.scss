@@ -1,0 +1,137 @@
+/**** Variables ****/
+$White:     #FFFFFF;
+$Grey:      #bdbdbd;
+$DarkGrey:  #727272;
+$Dark:      #37353a;
+$LightDark: #504d55;
+$Green:     #77DD77;
+$LightGrey: #f5f5f5;
+$squareText: 'Montserrat', sans-serif;
+$fancyText:  'Droid Serif', serif;
+$parText:    'Open Sans', sans-serif;
+
+.main-menu {
+  background: $Dark !important;
+}
+.projects-row {
+  position:relative;
+  background: $LightGrey;
+  header {
+    padding-top: 7%;
+    padding-bottom: 3%;
+  }
+  .title-caption {
+    padding-bottom:3%;
+  }
+}
+.project-grid {
+  .project-card {
+    box-shadow: 4px 4px 4px $Grey;
+    background:$White;
+
+    .card-img {
+      overflow:hidden;
+      max-height:300px;
+      padding:1%;
+      transition:0.3s all;
+      &:hover {
+          opacity:0.7;
+        }
+    }
+    .card-footer {
+      padding:1% 3%;
+      .card-title {
+        color:$Dark;
+        font: {
+          family:$parText;
+          weight:bold;
+          size:1.2em;
+        }
+      }
+      .card-desc {
+        color:$Dark;
+        font: {
+          family:$parText;
+          weight:300;
+          size:0.9em;
+        }
+      }
+    }
+    .project-comingsoon {
+      height:300px;
+      background: $Dark;
+      text-align:center;
+      .card-title {
+        color:$White;
+        padding-top:15%;
+        font: {
+          family:$parText;
+          weight:bold;
+          size:1.2em;
+        }
+      }
+      .card-desc {
+        color:$White;
+        font: {
+          family:$parText;
+          weight:300;
+          size:0.9em;
+        }
+      }
+    }
+  }
+}
+
+/*
+.title-row {
+  min-height:400px;
+  background-size: cover;
+  background-image: url('../Resource/large.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.green {
+  color:$Green;
+}
+.title-wrapper {
+  padding-top:20%;
+  padding-left: 15%;
+  .green {
+    margin-bottom:4%;
+    letter-spacing:6px;
+    font: {
+      family:$fancyText;
+      size:200%;
+    }
+  }
+  .white {
+    color: $White;
+    letter-spacing: 2px;
+    line-height:2em;
+    font: {
+      family: $parText;
+      size:1.1em;
+    }
+  }
+}
+.checkmark-wrapper {
+  padding-top:15%;
+  padding-left:15%;
+  .checkmark-content {
+    letter-spacing:2px;
+    color:$White;
+    font: {
+      size:1.1em;
+      family:$parText;
+    }
+    .green-check {
+      color:$Green;
+      font: {
+        size:2.5em;
+      }
+    }
+  }
+}
+*/

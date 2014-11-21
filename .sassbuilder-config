@@ -1,0 +1,10 @@
+{
+	"output_path": "/jungchangme/kech17.github.io",
+	"options": {
+		"cache":         true,
+		"debug":         true,
+		"line-comments": true,
+		"line-numbers":  true,
+		"style":         "nested"
+	}
+}
