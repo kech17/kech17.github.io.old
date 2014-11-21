@@ -212,13 +212,12 @@ slideLeftCalm
 
 	animation-timing-function: ease-in-out;	
 	-webkit-animation-timing-function: ease-in-out;		
-
 	visibility: visible !important;	
 }
 
 @keyframes slideLeftCalm {
 	0% {
-		transform: translateX(150%);
+		transform: translateX(20%);
 		opacity:0;
 	}
 	60%{
@@ -234,7 +233,7 @@ slideLeftCalm
 
 @-webkit-keyframes slideLeftCalm {
 	0% {
-		-webkit-transform: translateX(150%);
+		-webkit-transform: translateX(20%);
 		opacity:0;
 	}
 	60%{
@@ -257,7 +256,7 @@ slideRightCalm
 	animation-name: slideRightCalm;
 	-webkit-animation-name: slideRightCalm;	
 	
-	animation-duration: 1s;	
+	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
 
 	animation-timing-function: ease-in-out;	
@@ -268,7 +267,7 @@ slideRightCalm
 
 @keyframes slideRightCalm {
 	0% {
-		transform: translateX(-150%);
+		transform: translateX(-20%);
 		opacity: 0;
 	}
 	60%{
@@ -284,7 +283,7 @@ slideRightCalm
 
 @-webkit-keyframes slideRightCalm {
 	0% {
-		-webkit-transform: translateX(-150%);
+		-webkit-transform: translateX(-20%);
 		opacity:0;
 	}
 	60% {

@@ -6,7 +6,7 @@
 **		Projects Used:
 **			1. Chart.js
 **			2. Foundation
-**			3. Brace Forms
+**			3. Brace Forms (Formspree)
 **
 -->
 
@@ -38,6 +38,10 @@
 	<link rel='stylesheet' type='text/css' href='Resource/animations.css'>
 	<script src='Home/Home.js'></script>
 
+	<!-- Common Resources -->
+	<link rel='stylesheet' type='text/css' href='common.css'>
+	<script src='common.js'></script>
+
 	<!-- Sweet Alert -->
 	<script src='SweetAlert/sweet-alert.min.js'></script>
 	<link rel='stylesheet' href='SweetAlert/sweet-alert.css'>
@@ -58,7 +62,7 @@
 				</li>
 
 				<li>
-					<a class='project-nav'>Projects</a>
+					<a href='Projects/projects.html'>Projects</a>
 				</li>
 
 				<li >
@@ -135,7 +139,7 @@
 				<h2>who I <span class='green-text'>am</span>.</h2>
 			</header>
 			<p class='title-caption'>
-				My name is Jung Chang but you can call me Kevin!
+				My name is Jung but you can call me Kevin!
 			</p>
 			<div class='small-12 large-7 columns'>
 				<p class='whoiam-body'>
@@ -160,7 +164,7 @@
 				to learn more about the technical world.
 			</p>
 			<div class='large-7 columns'>
-				<h3>Skills Confidence Level</h3>
+				<h3>Skill Level<h3>
 				<canvas id="hardwareChart" width="650" height="397"></canvas>
 			</div>
 			<div class='large-5 columns'>
@@ -182,7 +186,7 @@
 			</div>
 		</div>
 	</div>
-	<div class='fourth-row'>
+	<div name='fourth-row' class='fourth-row'>
 		<div class='padding-bot-top row'>
 			<header>
 				<h2>contact <span class='green-text'>me</span>.</h2>
@@ -221,7 +225,7 @@
 	<footer>
 		<div class='row'>
 			<div class='large-6 columns'>
-				© 2014 Kevin Chang
+				© 2014 Jung Chang
 			</div>
 			<div class='large-6 columns'>
 				<ul>
@@ -235,23 +239,24 @@
 
 					<li >
 						<a class='cv-nav'>C.V.</a>
-					</ul>
-				</div>
+					</li>
+				</ul>
 			</div>
-		</footer>
-	</body>
-	<script src='Home/customChart.js'></script>
-	<script>
-	$(document).foundation();
-	</script>
-	<script>
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		</div>
+	</footer>
+</body>
+<script src='Home/customChart.js'></script>
+<script>
+$(document).foundation();
+</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	ga('create', 'UA-56299724-1', 'auto');
-	ga('send', 'pageview');
+ga('create', 'UA-56299724-1', 'auto');
+ga('send', 'pageview');
 
-	</script>
-	</html>
+</script>
+</html>
