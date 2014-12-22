@@ -28,10 +28,9 @@ $parText:    'Open Sans', sans-serif;
   .project-card {
     box-shadow: 4px 4px 4px $Grey;
     background:$White;
-
     .card-img {
       overflow:hidden;
-      max-height:300px;
+      height:300px;
       padding:1%;
       transition:0.3s all;
       &:hover {

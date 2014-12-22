@@ -48,7 +48,7 @@ $(document).ready(function() {
 		var formData = $(this).serialize();
 		console.log(formData);
 		$.ajax({
-			url: "http://forms.brace.io/kevinchang@live.ca", 
+			url: "http://formspree.io/kevinchang@live.ca", 
 			method: "POST",
 			data: formData,
 			dataType: "json"
@@ -60,8 +60,11 @@ $(document).ready(function() {
 	});
 	$(window).scroll(function() {
 		setupNavigation();
-		if (chartHidden && isScrolledIntoView('#hardwareChart'))
+		if (chartHidden && chartScrolledIntoView('.ct-chart'))
 		{
+			makeChart();
+			chartHidden = false;
+			/*
 			var myChart = new Chart(hardwareChart).Bar(hardwareData, {
 				responsive:true,
 				scaleOverride:true,
@@ -69,8 +72,9 @@ $(document).ready(function() {
 				scaleStepWidth: 1,
 				scaleStartValue: 0,
 				scaleLabel: "<%=value%>"
-			});
-			chartHidden = false;
+			});*/
+
+			
 		}
 		$('.fade-in-right').each(function() {
 			if (isScrolledIntoView(this)) {

@@ -1,0 +1,217 @@
+/**** Variables ****/
+$White:     #FFFFFF;
+$DarkBlue:  #1D2F43;
+$Blue:      #779ECB;
+$LightBlue: #E8EDE9;
+$Grey:      #bdbdbd;
+$DarkGrey:  #727272;
+$Purple:    #B39EB5;
+$Dark:      #37353a;
+$LightDark: #504d55;
+$Green:     #77DD77;
+$LightGrey: #f5f5f5;
+$rowSize:   550px;
+$squareText: 'Montserrat', sans-serif;
+$fancyText:  'Droid Serif', serif;
+$parText:    'Open Sans', sans-serif;
+$parLight: 300;
+
+.main-menu {
+	background:$Dark !important;
+}
+.title-row {
+	background:$White;
+	padding-top:10%;
+	padding-bottom:3%;
+	border-bottom: 1px solid $Grey;
+	.project-title {
+		font: {
+			weight:bold;
+			family:$parText;
+			size:3.5rem;
+		}
+	}
+	.project-caption {
+		color:$DarkGrey;
+		font: {
+			weight:300;
+			family: $parText;
+			size:1.3rem;
+		}
+	}
+	.project-caption-2 {
+		color:$DarkGrey;
+		font: {
+			weight:300;
+			family: $parText;
+			size:1rem;
+		}
+	}
+	.img-column {
+		text-align:center;
+		img {
+			max-height: 320px;
+		}
+		.printer-img {
+			max-height:400px !important;
+		}
+	}
+}
+.detail-row {
+	background:$LightGrey;
+	.skills-card {
+		box-shadow: 2px 2px 2px $Grey;
+		background:$White;
+		overflow:auto;
+		padding-top:3%;
+		padding-bottom:3%;
+		.skills-icon {
+			color:$Green;
+			padding-left:10px;
+			font: {
+				size:4em;
+			}
+		}
+		.card-title {
+			font: {
+				size:1.5em;
+			}
+		}
+		.card-desc {
+			color:$DarkGrey;
+			margin:0;
+		}
+	}
+}
+.more-row {
+	.row {
+		padding-bottom:5%;
+	}
+	background: $LightGrey;
+	padding-top:3%;
+	.clear-img {
+		max-height: 498px;
+		text-align:center;
+	}
+	.bag {
+		max-height:500px;
+		@media screen and (max-width: 1024px) {
+			margin-top:0;
+		}
+		@media screen and (min-width:1025px) {
+			margin-top:-140px;
+
+		}
+	}
+	.img-col {
+		background:$White;
+		box-shadow: 2px 2px 2px $Grey;
+		padding:0;
+		img {
+			
+			max-height:625px;
+			border: 1px solid #ddd;
+		}
+	}
+	.par-title {
+		font: {
+			size:1.5em;
+		}
+	}
+	.par-text {
+		color:$DarkGrey;
+		font: {
+			size:1em;
+		}
+	}
+	.img-text {
+		@media screen and (max-width: 1024px) {
+			padding:0;
+		}
+		@media screen and (min-width:1025px) {
+			padding-top:20%;
+		}
+	}
+}
+.more-projects {
+	margin-bottom:5%;
+	text-align:center;
+	max-height:300px;
+	.more-title {
+		color:$DarkGrey;
+		padding-bottom:3%;
+		margin-bottom:4%;
+		border-bottom: 1px solid $Grey;
+		font: {
+			size:1em;
+		}
+	}
+	background:$LightGrey;
+	img {
+		padding:1%;
+	}
+}
+.project-card {
+	box-shadow: 4px 4px 4px $Grey;
+	background:$White;
+	.card-img {
+		max-height:199px;
+		overflow:hidden;
+		padding:1%;
+		transition:0.3s all;
+		&:hover {
+			opacity:0.7;
+		}
+	}
+	.card-footer {
+		.card-title {
+			margin: 0;
+			padding-top:1%;
+			padding-left:8%;
+			text-align:left;
+			color:$Dark;
+			font: {
+				family:$parText;
+				weight:300;
+				size:1.2em;
+			}
+		}
+		.card-desc {
+			color:$DarkGrey;
+			padding-left:8%;
+			text-align:left;
+			font: {
+				family:$parText;
+				weight:300;
+				size:0.9em;
+			}
+		}
+	}
+}
+.coming-soon {
+	padding-bottom:2%;
+}
+.project-comingsoon {
+	height:300px;
+	margin:1%;
+	background: $Dark;
+	text-align:center;
+	.card-title {
+		color:$White;
+		padding-top:15%;
+		font: {
+			family:$parText;
+			weight:bold;
+			size:1.2em;
+		}
+	}
+	.card-desc {
+		color:$White;
+		padding: 3%;
+		font: {
+			family:$parText;
+			weight:300;
+			size:0.9em;
+		}
+	}
+}

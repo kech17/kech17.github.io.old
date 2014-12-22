@@ -51,6 +51,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+	<link rel="stylesheet" href="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+    <script src="http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+    <script src='Home/customChart.js'></script>
+
 </head>
 <body>
 
@@ -63,10 +67,6 @@
 
 				<li>
 					<a href='Projects/projects.html'>Projects</a>
-				</li>
-
-				<li >
-					<a class='cv-nav'>C.V.</a>
 				</li>
 			</ul>
 		</nav>
@@ -164,8 +164,8 @@
 				to learn more about the technical world.
 			</p>
 			<div class='large-7 columns'>
-				<h3>Skill Level<h3>
-				<canvas id="hardwareChart" width="650" height="397"></canvas>
+				<!-- <canvas id="hardwareChart" width="650" height="397"></canvas> -->
+				<div class='fade-in-left ct-chart'></div>
 			</div>
 			<div class='large-5 columns'>
 				<div class='skills-wrapper'>
@@ -236,16 +236,12 @@
 					<li>
 						<a href='Projects/projects.html'>Projects</a>
 					</li>
-
-					<li >
-						<a class='cv-nav'>C.V.</a>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</footer>
 </body>
-<script src='Home/customChart.js'></script>
+
 <script>
 $(document).foundation();
 </script>

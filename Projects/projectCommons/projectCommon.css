@@ -1,0 +1,183 @@
+/**** Variables ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000319}}
+.main-menu {
+  background: #37353a !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000322}}
+.title-row {
+  background: #FFFFFF;
+  padding-top: 10%;
+  padding-bottom: 3%;
+  border-bottom: 1px solid #bdbdbd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000327}}
+  .title-row .project-title {
+    font-weight: bold;
+    font-family: "Open Sans", sans-serif;
+    font-size: 3.5rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000334}}
+  .title-row .project-caption {
+    color: #727272;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000342}}
+  .title-row .project-caption-2 {
+    color: #727272;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000350}}
+  .title-row .img-column {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000352}}
+    .title-row .img-column img {
+      max-height: 320px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000355}}
+    .title-row .img-column .printer-img {
+      max-height: 400px !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000360}}
+.detail-row {
+  background: #f5f5f5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000362}}
+  .detail-row .skills-card {
+    box-shadow: 2px 2px 2px #bdbdbd;
+    background: #FFFFFF;
+    overflow: auto;
+    padding-top: 3%;
+    padding-bottom: 3%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000368}}
+    .detail-row .skills-card .skills-icon {
+      color: #77DD77;
+      padding-left: 10px;
+      font-size: 4em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000375}}
+    .detail-row .skills-card .card-title {
+      font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000380}}
+    .detail-row .skills-card .card-desc {
+      color: #727272;
+      margin: 0; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000386}}
+.more-row {
+  background: #f5f5f5;
+  padding-top: 3%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000387}}
+  .more-row .row {
+    padding-bottom: 5%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000392}}
+  .more-row .clear-img {
+    max-height: 498px;
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000396}}
+  .more-row .bag {
+    max-height: 500px; }
+    @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000396}}
+      .more-row .bag {
+        margin-top: 0; } }
+    @media screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\0000396}}
+      .more-row .bag {
+        margin-top: -140px; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003106}}
+  .more-row .img-col {
+    background: #FFFFFF;
+    box-shadow: 2px 2px 2px #bdbdbd;
+    padding: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003110}}
+    .more-row .img-col img {
+      max-height: 625px;
+      border: 1px solid #ddd; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003116}}
+  .more-row .par-title {
+    font-size: 1.5em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003121}}
+  .more-row .par-text {
+    color: #727272;
+    font-size: 1em; }
+  @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003127}}
+    .more-row .img-text {
+      padding: 0; } }
+  @media screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003127}}
+    .more-row .img-text {
+      padding-top: 20%; } }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003136}}
+.more-projects {
+  margin-bottom: 5%;
+  text-align: center;
+  max-height: 300px;
+  background: #f5f5f5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003140}}
+  .more-projects .more-title {
+    color: #727272;
+    padding-bottom: 3%;
+    margin-bottom: 4%;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 1em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003150}}
+  .more-projects img {
+    padding: 1%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003154}}
+.project-card {
+  box-shadow: 4px 4px 4px #bdbdbd;
+  background: #FFFFFF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003157}}
+  .project-card .card-img {
+    max-height: 199px;
+    overflow: hidden;
+    padding: 1%;
+    transition: 0.3s all; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003162}}
+    .project-card .card-img:hover {
+      opacity: 0.7; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003167}}
+  .project-card .card-footer .card-title {
+    margin: 0;
+    padding-top: 1%;
+    padding-left: 8%;
+    text-align: left;
+    color: #37353a;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003179}}
+  .project-card .card-footer .card-desc {
+    color: #727272;
+    padding-left: 8%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.9em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003191}}
+.coming-soon {
+  padding-bottom: 2%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003194}}
+.project-comingsoon {
+  height: 300px;
+  margin: 1%;
+  background: #37353a;
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003199}}
+  .project-comingsoon .card-title {
+    color: #FFFFFF;
+    padding-top: 15%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.2em; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Projects\/projectCommons\/projectCommon\.scss}line{font-family:\00003208}}
+  .project-comingsoon .card-desc {
+    color: #FFFFFF;
+    padding: 3%;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.9em; }
+
+/*# sourceMappingURL=projectCommon.css.map */

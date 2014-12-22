@@ -11,6 +11,19 @@ function isScrolledIntoView(elem)
     return (docViewBottom >= (elemTop+elemHeight/2));
 }
 
+function chartScrolledIntoView(elem)
+{
+	var docViewTop = $(window).scrollTop();
+	var docViewBottom = docViewTop + $(window).height();
+
+	var elemTop = $(elem).offset().top;
+	var elemHeight = $(elem).height();
+	var elemBottom = elemTop + elemHeight;
+
+    //return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
+    return (docViewBottom >= (elemTop+elemHeight/2+elemHeight/3));
+}
+
 function fadeFromLeft(elem)
 {
 	var offset = 100;

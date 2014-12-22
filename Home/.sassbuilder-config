@@ -1,5 +1,5 @@
 {
-	"output_path": "/path/to/compiled/css",
+	"output_path": "./",
 	"options": {
 		"cache":         true,
 		"debug":         true,

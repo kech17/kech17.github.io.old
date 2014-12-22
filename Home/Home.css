@@ -1,2 +1,265 @@
-input[type=text]:focus,textarea:focus{border-width:2px;border-color:#7d7}button:hover,button:focus,.button:hover,.button:focus{background-color:transparent}button:hover,button:focus,.button:hover,.button:focus{color:#7d7}.row{max-width:67rem}body{margin:0}body,html,main{height:100%}.fade-in-left,.fade-in-right{visibility:hidden}.main-menu-dark{background-color:#2d2c30 !important;box-shadow:0 2px 6px rgba(0,0,0,0.2);top:0}.main-menu{padding-top:10px;height:55px;width:100%;opacity:.95;position:fixed;z-index:7;background:transparent;transition:all 0.6s ease-in-out}.main-menu ul{padding-top:4px}.main-menu li{display:inline-block;padding:0px 20px}.main-menu a{color:#fff;font-family:"Open Sans",sans-serif;letter-spacing:5px;text-decoration:none;transition:all 0.3s ease-in-out}.main-menu a:hover,.main-menu .current a{color:#989898}.title-caption{color:#727272;text-align:center;max-width:60%;margin-left:auto;margin-right:auto;font-weight:light;font-family:"Open Sans",sans-serif;font-size:1.3rem}.padding-bot-top{padding-bottom:2%;padding-top:2%}header{padding-top:3%}header h2{text-align:center;font-weight:bold;font-family:"Open Sans",sans-serif;font-size:3.5rem}.green-text{color:#7d7;font-size:3.5rem}h1,h2{letter-spacing:6px}.first-row,.second-row,.third-row,.fourth-row,footer{position:relative;width:100%}.first-row:after,.second-row:after,.third-row:after{content:'';position:absolute;top:100%;left:50%;margin-left:-30px;width:0;height:0;border-left:solid 30px transparent;border-right:solid 30px transparent;z-index:5;padding-bottom:3%}.first-row:after{border-top:solid 30px #f5f5f5}.second-row:after{border-top:solid 30px #37353a}.third-row:after{border-top:solid 30px #f5f5f5}button:focus{outline:none}.fixed-row{height:550px;background-size:cover;background-attachment:fixed;background-repeat:no-repeat;background-position:center center}.main-row{background-image:url("../Resource/large.png")}.title-wrapper{text-align:center;height:100%;position:fixed;margin:auto;width:100%;padding-top:10%}.title-wrapper h1{vertical-align:middle;line-height:1.2em;margin-bottom:4%}.title-wrapper .bold{color:#fff;font-weight:bold;font-family:"Open Sans",sans-serif;font-size:400%;letter-spacing:5px}.title-wrapper .normal{color:#7d7;font-size:200%;font-family:"Droid Serif",serif}.button-wrapper{text-align:center}.button-wrapper .main-button{border:3px solid #7d7;border-radius:50px;color:#7d7;min-height:60px;margin-top:30px;overflow:hidden;background:transparent;transition:all 0.3s ease-in-out}.button-wrapper .main-button:hover{transition:all 0.3s ease-in-out;border:3px dashed #7d7;color:#7d7;background:transparent;cursor:pointer}span{letter-spacing:2px;font-weight:bold;font-family:"Montserrat",sans-serif;font-size:1rem}.first-row{background:#f5f5f5}.first-row header{padding-top:0}.first-row h2{color:#37353a}.first-row .columns{text-align:center}.first-row .columns .main-icons{padding-right:20%;padding-left:20%}.first-row .columns p{color:#37353a;font-family:"Open Sans",sans-serif}.first-row .columns .title{font-size:150%;font-weight:bold}.second-row{background:#37353a}.second-row .triangle{border-top:30px solid #f5f5f5}.second-row .large-5{text-align:center}.second-row .columns{padding-top:40px}.second-row .title-caption{color:#727272}.second-row p{color:#fff;font-family:"Open Sans",sans-serif}.second-row .whoiam-body{line-height:2}.second-row h2{color:#fff}.second-row .self-img{max-width:90%;max-height:375px;margin-top:-10%}.stat-row img,.third-row img{max-height:100px}.stat-row .row,.third-row .row{max-width:70rem}.stat-row .row .columns p,.third-row .row .columns p{line-height:3rem;font-family:"Open Sans",sans-serif}@media screen and (max-width: 1024px){.stat-row .row .columns p,.third-row .row .columns p{padding-top:5%;text-align:center}}@media screen and (min-width: 1025px){.stat-row .row .columns p,.third-row .row .columns p{padding-top:20%;text-align:left}}.stat-row .stat-title,.third-row .stat-title{text-align:center}.stat-row .stat-title h2,.third-row .stat-title h2{padding-left:20px;font-family:"Open Sans",sans-serif;font-weight:bold}.third-row{background:#f5f5f5}.third-row h2{color:#37353a}.third-row ul li{color:#37353a}.third-row .triangle{border-top:30px solid #37353a}.third-row .large-7{text-align:center}.third-row .large-7 h3{font-family:"Open Sans",sans-serif;font-size:1.5em}.fourth-row{background:#37353a}.fourth-row h2{color:#fff}.fourth-row form .columns{width:50%}.fourth-row form label{padding:0 1rem;color:#fff;font-family:"Open Sans",sans-serif;font-size:1rem;font-weight:light}.fourth-row form input{border-radius:5px}.fourth-row form textarea{border-radius:5px;min-height:200px;max-height:200px}.fourth-row .triangle{border-top:30px solid #f5f5f5}footer{height:75px;text-align:center;background:#f5f5f5;color:#37353a;font-family:"Open Sans",sans-serif}footer .columns{padding-top:3%}footer li{display:inline-block;list-style:none;padding:0 20px}footer li a{color:#37353a;font-family:"Open Sans",sans-serif}footer li a:hover{color:#37353a}
+/**** Variables ****/
+/**** Rows General ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000320}}
+.green-text {
+  color: #77DD77;
+  font-size: 3.5rem; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000324}}
+h1, h2 {
+  letter-spacing: 6px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000327}}
+.first-row, .second-row, .third-row, .fourth-row, footer {
+  position: relative;
+  width: 100%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000332}}
+.first-row:after, .second-row:after, .third-row:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -30px;
+  width: 0;
+  height: 0;
+  border-left: solid 30px transparent;
+  border-right: solid 30px transparent;
+  z-index: 5;
+  padding-bottom: 3%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000348}}
+.first-row:after {
+  border-top: solid 30px #f5f5f5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000349}}
+.second-row:after {
+  border-top: solid 30px #37353a; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000350}}
+.third-row:after {
+  border-top: solid 30px #f5f5f5; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000352}}
+button:focus {
+  outline: none; }
+
+/**** Main Row ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000356}}
+.fixed-row {
+  height: 550px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000364}}
+.main-row {
+  background-image: url("../Resource/large.png"); }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000367}}
+.title-wrapper {
+  text-align: center;
+  height: 100%;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  padding-top: 10%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000375}}
+.title-wrapper h1 {
+  vertical-align: middle;
+  line-height: 1.2em;
+  margin-bottom: 4%; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000380}}
+.title-wrapper .bold {
+  color: #FFFFFF;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 400%;
+  letter-spacing: 5px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000389}}
+.title-wrapper .normal {
+  color: #77DD77;
+  font-size: 200%;
+  font-family: "Droid Serif", serif; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000394}}
+.button-wrapper {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\0000396}}
+  .button-wrapper .main-button {
+    border: 3px solid #77DD77;
+    border-radius: 50px;
+    color: #77DD77;
+    min-height: 60px;
+    margin-top: 30px;
+    overflow: hidden;
+    background: transparent;
+    transition: all 0.3s ease-in-out; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003105}}
+    .button-wrapper .main-button:hover {
+      transition: all 0.3s ease-in-out;
+      border: 3px dashed #77DD77;
+      color: #77DD77;
+      background: transparent;
+      cursor: pointer; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003114}}
+span {
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem; }
+
+/**** First Row ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003125}}
+.first-row {
+  background: #f5f5f5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003127}}
+  .first-row header {
+    padding-top: 0; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003130}}
+  .first-row h2 {
+    color: #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003133}}
+  .first-row .columns {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003135}}
+    .first-row .columns .main-icons {
+      padding-right: 25%;
+      padding-left: 25%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003139}}
+    .first-row .columns p {
+      color: #37353a;
+      font-family: "Open Sans", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003145}}
+    .first-row .columns .title {
+      font-size: 150%;
+      font-weight: bold; }
+
+/**** Second Row ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003157}}
+.second-row {
+  background: #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003159}}
+  .second-row .triangle {
+    border-top: 30px solid #f5f5f5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003162}}
+  .second-row .large-5 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003165}}
+  .second-row .columns {
+    padding-top: 40px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003168}}
+  .second-row .title-caption {
+    color: #727272; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003171}}
+  .second-row p {
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003177}}
+  .second-row .whoiam-body {
+    line-height: 2; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003180}}
+  .second-row h2 {
+    color: #FFFFFF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003183}}
+  .second-row .self-img {
+    max-width: 90%;
+    max-height: 375px;
+    margin-top: -10%; }
+
+/**** Third Row ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003191}}
+.stat-row img, .third-row img {
+  max-height: 100px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003194}}
+.stat-row .row, .third-row .row {
+  max-width: 70rem; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003197}}
+  .stat-row .row .columns p, .third-row .row .columns p {
+    line-height: 3rem;
+    font-family: "Open Sans", sans-serif; }
+    @media screen and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003197}}
+      .stat-row .row .columns p, .third-row .row .columns p {
+        padding-top: 5%;
+        text-align: center; } }
+    @media screen and (min-width: 1025px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003197}}
+      .stat-row .row .columns p, .third-row .row .columns p {
+        padding-top: 20%;
+        text-align: left; } }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003213}}
+.stat-row .stat-title, .third-row .stat-title {
+  text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003215}}
+  .stat-row .stat-title h2, .third-row .stat-title h2 {
+    padding-left: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003224}}
+.third-row {
+  background: #f5f5f5; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003227}}
+  .third-row h2 {
+    color: #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003231}}
+  .third-row ul li {
+    color: #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003235}}
+  .third-row .triangle {
+    border-top: 30px solid #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003238}}
+  .third-row .large-7 {
+    text-align: center; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003240}}
+    .third-row .large-7 h3 {
+      font-family: "Open Sans", sans-serif;
+      font-size: 1.5em; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003249}}
+.ct-label.ct-horizontal {
+  text-align: center !important;
+  font-size: 0.6rem !important; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003253}}
+.ct-bar {
+  stroke: #77DD77 !important;
+  stroke-width: 40px !important; }
+
+/**** Fourth Row ****/
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003259}}
+.fourth-row {
+  background: #37353a; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003262}}
+  .fourth-row h2 {
+    color: #FFFFFF; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003266}}
+  .fourth-row form .columns {
+    width: 50%; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003269}}
+  .fourth-row form label {
+    padding: 0 1rem;
+    color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: light; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003278}}
+  .fourth-row form input {
+    border-radius: 5px; }
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003281}}
+  .fourth-row form textarea {
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 200px; }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/C\:\/jungchangME\/kech17\.github\.io\/Home\/Home\.scss}line{font-family:\00003288}}
+.fourth-row .triangle {
+  border-top: 30px solid #f5f5f5; }
+
 /*# sourceMappingURL=Home.css.map */

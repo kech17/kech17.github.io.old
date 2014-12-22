@@ -35,7 +35,7 @@
 	<script src='../../Chart.js/Chart.min.js'></script>
 
 	<!-- Projects Resources -->
-	<link rel='stylesheet' type='text/css' href='../../Projects/truck/truck.css'>
+	<link rel='stylesheet' type='text/css' href='../projectCommons/projectCommon.css'>
 	<link rel='stylesheet' type='text/css' href='../../Resource/animations.css'>
 
 	<!-- Common Resources -->
@@ -51,6 +51,10 @@
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 
+	<!-- Slick -->
+	<link rel='stylesheet' type='text/css' href='../../slick/slick.css'>
+	<script src='../../slick/slick.min.js'></script>
+
 </head>
 <body>
 	<nav class='main-menu'>
@@ -62,12 +66,157 @@
 			<li>
 				<a href='../projects.html'>Projects</a>
 			</li>
-
-			<li >
-				<a class='cv-nav'>C.V.</a>
-			</li>
 		</ul>
 	</nav>
+	<div class='title-row'>
+		<div class='row'>
+			<div class='large-6 columns'>
+				<h1 class='project-title'>Sensor Analytics</h1>
+				<p class='project-caption'>
+					Using sensors, radio modules, and an Arduino to update data to a cloud server in real-time.
+				</p>
+				<p class='project-caption-2'>The aim of the project was to gather data readings from sensors attached to a remote controlled truck. The sensors will detect behavioural trends in the truck such as accleration, temperature, and rotation. This data is then communicated via wifi module to a cloud server which hosts a dashboard that displays metrics.</p>
+			</div>
+			<div class='img-column large-6 columns'>
+				<img src='../../Resource/arduino.png'/>
+			</div>
+		</div>
+	</div>
+	<div class='detail-row'>
+		<div class='row'>
+			<header>
+				<h2> skills used.</h2>
+			</header>
+			<p class='title-caption'>
+				These are the technical skills learned and used to complete the project. 
+			</p>
+			<ul class="small-block-grid-1 medium-block-grid-2 skills-grid">
+				<li>
+					<div class='skills-card'>
+						<div class='small-2 large-2 columns'>
+							<i class='fi-wrench skills-icon'></i>
+						</div>
+						<div class='small-10 large-10 columns'>
+							<div class='card-desc'>
+								<h1 class='card-title'>Arduino Microcontroller</h1>
+								<p class='card-desc'>An Arduino Fio V3 microcontroller was used gather sensor data on the truck. C++ was used for code.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class='skills-card'>
+						<div class='small-2 large-2 columns'>
+							<i class='fi-rss skills-icon'></i>
+						</div>
+						<div class='small-10 large-10 columns'>
+							<div class='card-desc'>
+								<h1 class='card-title'>Sensors and Actuators</h1>
+								<p class='card-desc'>Sensors allow environmental measurements and LEDs server to display behavioural processes of the code.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class='skills-card'>
+						<div class='small-2 large-2 columns'>
+							<i class='fi-cloud skills-icon'></i>
+						</div>
+						<div class='small-10 large-10 columns'>
+							<div class='card-desc'>
+								<h1 class='card-title'>Cloud Computing</h1>
+								<p class='card-desc'>A wifi module posts to a cloud server that analysizes and translates the raw sensor values.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class='skills-card'>
+						<div class='small-2 large-2 columns'>
+							<i class='fi-graph-bar skills-icon'></i>
+						</div>
+						<div class='small-10 large-10 columns'>
+							<div class='card-desc'>
+								<h1 class='card-title'>Metrics and Analytics</h1>
+								<p class='card-desc'>The cloud server hosts a dashboard page visualizing useful metrics and data trends from sensor values.</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='more-row'>
+		<div class='row'>
+			<div class='img-col large-7 columns'>
+				<img src='../../Resource/truckcircuit.png'/>
+			</div>
+			<div class='large-5 columns'>
+				<div class='img-text'>
+					<h1 class='par-title'>Wiring and Soldering</h1>
+					<p class='par-text'>This is the finalized circuit for the project. It consists of 2 LED actuators to show system behaviours. It also has a potentiometer and a digital accelerometer/gyroscope sensor called the MPU6050. The circuit is soldered onto a perf board and custom wiring was used to connect it to the arduino fio v3.</p>
+				</div>
+			</div>
+		</div>
+		<div class='row'>
+			<div class='large-5 columns'>
+				<div class='img-text'>
+					<h1 class='par-title'>Field Testing with RC Truck</h1>
+					<p class='par-text'>The circuit is fixed on a remote controlled truck for field testing. Sensors pick up accleration, temperature, and rotation readings to determine the state of the truck. For prototype sake, the sensor system is not shielded and fixed on the truck with electric tape.</p>
+				</div>
+			</div>
+			<div class='img-col large-7 columns'>
+				<img src='../../Resource/truckimg.png'/>
+			</div>
+		</div>
+	</div>
+	<div class='more-projects'>
+		<div class='row'>
+			<h1 class='more-title'>MORE PROJECTS</h1>
+			<ul class="small-block-grid-2 medium-block-grid-3 project-grid">
+				<li>
+					<div class='project-card'>
+						<div class='card-img'>
+							<a href='../meisbags/meisbags.html'>
+								<img src='../../Resource/meisbags.png'/>
+							</a>
+						</div>
+						<div class='card-footer'>
+							<h1 class='card-title'>Meisbags</h1>
+							<p class='card-desc'>Webdev and Ecommerce</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class='project-card'>
+						<div class='card-img'>
+							<a href='../printer/printer.html'>
+								<img src='../../Resource/printer.png'/>
+							</a>
+						</div>
+						<div class='card-footer'>
+							<h1 class='card-title'>3D Printer</h1>
+							<p class='card-desc'>Software and Wiring</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class='project-card coming-soon'>
+						<a href="../index.html#fourth-row">
+							<div class='card-img'>
+								<div class='project-comingsoon'>
+									<h1 class='card-title'>Have an idea for cool a project?</h1>
+									<p class='card-desc'>Just email me an idea! I'm always looking for cool projects to do.</p>
+								</div>
+							</div>
+						</a>
+						<div class='card-footer'>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
 	<footer>
 		<div class='row'>
 			<div class='large-6 columns'>
@@ -82,12 +231,18 @@
 					<li>
 						<a href='../projects.html'>Projects</a>
 					</li>
-
-					<li >
-						<a class='cv-nav'>C.V.</a>
-					</li>
 				</ul>
 			</div>
 		</div>
 	</footer>
+	<script>
+		$(document).ready(function() { 
+		$('.multiple-items').slick({
+			infinite: true,
+			dots: true,
+			slidesToShow: 3,
+			slidesToScroll: 1
+		});
+	});
+	</script>
 </body>
